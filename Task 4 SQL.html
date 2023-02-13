@@ -5,13 +5,13 @@
    "id": "bf87b68f-c49e-4712-a131-4fd20b8df013",
    "metadata": {},
    "source": [
-    "Task 4 SQL \n",
+    "# Task 4 SQL \n",
     "\n",
-    "Jordan Wheeler\n",
+    "# Jordan Wheeler\n",
     "\n",
-    "Data Analytics Fundamentals Module 5\n",
+    "# Data Analytics Fundamentals Module 5\n",
     "\n",
-    "12 February 2023"
+    "# 12 February 2023"
    ]
   },
   {
@@ -483,7 +483,7 @@
    "id": "09f64996-1d5a-40a6-8245-063aa6b40f74",
    "metadata": {},
    "source": [
-    "1- Select 17.2.2"
+    "# 1- Select 17.2.2"
    ]
   },
   {
@@ -572,7 +572,7 @@
    "id": "5431306a-5483-4b06-8596-fdd236230f5a",
    "metadata": {},
    "source": [
-    "2- Where Clause"
+    "# 2- Where Clause"
    ]
   },
   {
@@ -812,7 +812,7 @@
    "id": "304ea8ed-67d8-4179-82f1-97fde51d80f9",
    "metadata": {},
    "source": [
-    "3- Order By"
+    "# 3- Order By"
    ]
   },
   {
@@ -1219,7 +1219,7 @@
    "id": "1ec8a430-bf2a-43e7-8999-3cc46f595aae",
    "metadata": {},
    "source": [
-    "4- Inner Join"
+    "# 4- Inner Join"
    ]
   },
   {
@@ -1318,7 +1318,7 @@
    "id": "140ba3ba-706e-407c-869e-abb5f7b99e8f",
    "metadata": {},
    "source": [
-    "5- Insert INTO"
+    "# 5- Insert INTO"
    ]
   },
   {
@@ -1434,7 +1434,7 @@
    "id": "ec35d1d2-9b0c-41f5-86ec-1adf8a3a2bcd",
    "metadata": {},
    "source": [
-    "6- Update Statement"
+    "# 6- Update Statement"
    ]
   },
   {
@@ -1571,7 +1571,7 @@
    "id": "0bb0f627-2334-42a8-8c43-e5035e7cf826",
    "metadata": {},
    "source": [
-    "7- Delete From"
+    "# 7- Delete From"
    ]
   },
   {
@@ -1700,7 +1700,7 @@
    "id": "a775e5b6-ca81-434d-a0b7-7c92a31160fe",
    "metadata": {},
    "source": [
-    "8- Final Results, Select"
+    "# 8- Final Results, Select"
    ]
   },
   {
@@ -1924,197 +1924,14 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 49,
+   "execution_count": 48,
    "id": "d028af2b-fd70-47b1-9667-c95ed78759ce",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>id</th>\n",
-       "      <th>isbn</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>0</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0134289366</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>1</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0134289366</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2</th>\n",
-       "      <td>5</td>\n",
-       "      <td>0134289366</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>3</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0135404673</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>4</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0135404673</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>5</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0132151006</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>6</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0132151006</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>7</th>\n",
-       "      <td>3</td>\n",
-       "      <td>0132151006</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>8</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0134743350</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>9</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0134743350</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>10</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0133976890</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>11</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0133976890</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>12</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0133406954</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>13</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0133406954</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>14</th>\n",
-       "      <td>3</td>\n",
-       "      <td>0133406954</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>15</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0134601548</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>16</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0134601548</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>17</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0136151574</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>18</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0136151574</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>19</th>\n",
-       "      <td>4</td>\n",
-       "      <td>0136151574</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>20</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0134448235</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>21</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0134448235</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>22</th>\n",
-       "      <td>1</td>\n",
-       "      <td>0134444302</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>23</th>\n",
-       "      <td>2</td>\n",
-       "      <td>0134444302</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
-       "    id        isbn\n",
-       "0    1  0134289366\n",
-       "1    2  0134289366\n",
-       "2    5  0134289366\n",
-       "3    1  0135404673\n",
-       "4    2  0135404673\n",
-       "5    1  0132151006\n",
-       "6    2  0132151006\n",
-       "7    3  0132151006\n",
-       "8    1  0134743350\n",
-       "9    2  0134743350\n",
-       "10   1  0133976890\n",
-       "11   2  0133976890\n",
-       "12   1  0133406954\n",
-       "13   2  0133406954\n",
-       "14   3  0133406954\n",
-       "15   1  0134601548\n",
-       "16   2  0134601548\n",
-       "17   1  0136151574\n",
-       "18   2  0136151574\n",
-       "19   4  0136151574\n",
-       "20   1  0134448235\n",
-       "21   2  0134448235\n",
-       "22   1  0134444302\n",
-       "23   2  0134444302"
-      ]
-     },
-     "execution_count": 49,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "# View by ISBN\n",
     "\n",
-    "pd.read_sql('SELECT * FROM author_ISBN', connection)"
+    "pd.read_sql('SELECT * FROM author_ISBN'"
    ]
   }
  ],
