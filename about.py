@@ -56,7 +56,7 @@ def get_header(fn):
  
  The Python version is:      {platform.python_version()}
  
- The Python interpreter is at: 
+ The Python interpreter is at:
  {sys.executable}
  The active environment should be either conda OR pip (one should be None):
      Active conda env is: {os.environ.get('CONDA_DEFAULT_ENV') }
@@ -88,26 +88,18 @@ def get_header(fn):
 # Call our print_header() function on this file to test it
 # Python provides a built-in attribute representing the file name
 # two underscores on each side of the word 'file'
-print(get_header(__file__))
 
-print_to_file = True
+# This is very standard Python - it means
+# "If this module is the one being executed, i.e., the main module"
+# (as opposed to being imported by another module)
+# Literally: "if this module name == the name of the main module"
+if __name__ == "__main__":
+    print(get_header(__file__))
 
-if print_to_file:
-    # print to a file named about.txt
-    fn = "about.txt"
-    with open(fn, "w") as f:
-        f.write(get_header(__file__))
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+    print_to_file = True
+
+    if print_to_file:
+        # print to a file named about.txt
+        fn = "about.txt"
+        with open(fn, "w") as f:
+            f.write(get_header(__file__))
